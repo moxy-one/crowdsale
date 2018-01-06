@@ -8,12 +8,15 @@ import "../infrastructure/authentication/IAuthenticationManager.sol";
 import "../thirdparty/wings/source/IWingsAdapter.sol";
 
 /**
- * SpendCrowdsale
+ * MoxyOne Crowdsale
+ *
+ * Advancing the blockchain industry by creating seamless and secure debit card 
+ * and payment infrastructure for every company, project and ICO that issues cryptocurrency tokens. 
  *
  * #created 06/01/2018
  * #author Frank Bonnet
  */
-contract SpendCrowdsale is Crowdsale, TokenRetriever, IPausable, IAuthenticationManager, IWingsAdapter {
+contract MoxyOneCrowdsale is Crowdsale, TokenRetriever, IPausable, IAuthenticationManager, IWingsAdapter {
 
     // State
     bool private paused;

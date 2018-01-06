@@ -146,7 +146,7 @@ module.exports = {
                 }
             },
             crowdsale: {
-                contract: 'SpendCrowdsale',
+                contract: 'MoxyOneCrowdsale',
                 baseRate: 1000,
                 authentication: {
                     whitelist: {

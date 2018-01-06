@@ -1,7 +1,7 @@
 pragma solidity ^0.4.18;
 
-import "../../source/SpendCrowdsale.sol";
+import "../../source/MoxyOneCrowdsale.sol";
 
-contract ProxyCrowdsale is SpendCrowdsale {
-    function ProxyCrowdsale() public SpendCrowdsale() {}
+contract ProxyCrowdsale is MoxyOneCrowdsale {
+    function ProxyCrowdsale() public MoxyOneCrowdsale() {}
 }

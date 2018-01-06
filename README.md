@@ -1,6 +1,10 @@
-# Welcome to the crowdsale and token repository
+# Welcome to the crowdsale and token repository of MoxyOne
 
-Generic Crowdsale
+Tokens With Real World Value
+
+Advancing the blockchain industry by creating seamless and secure debit card and payment infrastructure for every company, project and ICO that issues cryptocurrency tokens. 
+
+https://moxy.one/
 
 ## Preparing development environment
 
@@ -42,4 +46,4 @@ automatically by Continuous Integration.
 
 ## Development
 
-Crowdsale and token developed by [Frank Bonnet](https://www.linkedin.com/in/frank-bonnet-3b890865/)
+Crowdsale and token developed by [Frank Bonnet](https://www.linkedin.com/in/frank-bonnet-3b890865/) @[DCORP](https://www.dcorp.it)
