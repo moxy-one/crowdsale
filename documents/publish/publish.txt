@@ -1,0 +1,11 @@
+
+
+
+geth --testnet --rpc --rpcport "8546" console
+web3.personal.unlockAccount("0xb1505aEaFe515A66c6975Bf4e62d9B5aa1cd26e4", "Sleutel80", 1500000)
+npm-run truffle migrate --network ropsten --reset
+
+
+geth --rpc --rpcport "8547"
+web3.personal.unlockAccount("0x3cAf983aCCccc2551195e0809B7824DA6FDe4EC8", "Sleutel80", 15000000)
+npm-run truffle migrate --network main

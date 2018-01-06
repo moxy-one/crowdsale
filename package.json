@@ -1,0 +1,41 @@
+{
+  "name": "generic_crowdsale",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "truffle build",
+    "serve": "truffle serve",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "linter": "solium --dir contracts",
+    "linter-tests": "standard test/*.js",
+    "linter-tests-autofix": "standard --fix test/*.js",
+    "test": "truffle test test/*.js",
+    "test-unit": "testrpc > /dev/null & cat test_grouping | xargs -I NAME bash -c 'truffle test NAME'",
+    "coverage": "solidity-coverage; true",
+    "testrpc_boot": "docker run -d -p 8545:8545 --name testrpc wbuchwalter/testrpc",
+    "docker_test": "npm run testrpc_boot && sleep 5 && truffle test; npm run testrpc_destroy",
+    "testrpc_destroy": "docker stop testrpc; docker rm testrpc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DecentralizedIT/generic-crowdsale"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "bignumber.js": "^2.0",
+    "lodash": "^4.17.4",
+    "truffle": "^4.0.4",
+    "web3": "^1.0.0-beta.26"
+  },
+  "devDependencies": {
+    "ethereumjs-testrpc": "^6.0.1",
+    "solidity-coverage": "^0.3.5",
+    "solium": "^1.0.4",
+    "standard": "^10.0.3"
+  }
+}
