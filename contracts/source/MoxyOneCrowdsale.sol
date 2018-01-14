@@ -40,7 +40,7 @@ contract MoxyOneCrowdsale is Crowdsale, TokenRetriever, IPausable, IAuthenticati
     /**
      * Change the state to paused
      */
-    function pause() public {
+    function pause() public only_owner {
         paused = true;
     }
 
@@ -49,7 +49,7 @@ contract MoxyOneCrowdsale is Crowdsale, TokenRetriever, IPausable, IAuthenticati
      * Change the state to resume, undo the effects 
      * of calling pause
      */
-    function resume() public {
+    function resume() public only_owner {
         paused = false;
     }
 
