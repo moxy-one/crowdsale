@@ -169,7 +169,7 @@ module.exports = {
                     start: 'March 14, 2018 01:00:00 GMT+0000',
                     soft: [4000, 'ether'],
                     hard: [24000, 'ether'],
-                    accepted: [40, 'finney']
+                    accepted: [10, 'finney']
                 },
                 phases: [{
                     duration: [50, 'days'], // Presale - until March 10, 2018
@@ -270,18 +270,36 @@ module.exports = {
                         overwriteReleaseDate: true,
                         fixedReleaseDate: 0
                     }],
-                    tokenReleasePhases: [{
-                        percentage: 2500,
-                        vestingPeriod: [90, 'days']
+                    tokenReleasePhases: [{ // Vesting period of 6 months then 10% each month
+                        percentage: 1000,
+                        vestingPeriod: [180, 'days'] // [6, 'months']
                     }, {
-                        percentage: 2500,
-                        vestingPeriod: [180, 'days']
+                        percentage: 1000,
+                        vestingPeriod: [210, 'days'] // [7, 'months']
                     }, {
-                        percentage: 2500,
-                        vestingPeriod: [270, 'days']
+                        percentage: 1000,
+                        vestingPeriod: [240, 'days'] // [8, 'months']
                     }, {
-                        percentage: 2500,
-                        vestingPeriod: [360, 'days']
+                        percentage: 1000,
+                        vestingPeriod: [270, 'days'] // [9, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [300, 'days'] // [10, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [330, 'days'] // [11, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [360, 'days'] // [12, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [390, 'days'] // [13, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [420, 'days'] // [14, 'months']
+                    }, {
+                        percentage: 1000,
+                        vestingPeriod: [450, 'days'] // [15, 'months']
                     }]
                 }
             }
