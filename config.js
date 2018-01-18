@@ -17,19 +17,19 @@ module.exports = {
                     }
                 },
                 presale: {
-                    start: 'January 14, 2018 12:00:00 GMT+0000',
+                    start: 'January 19, 2018 01:00:00 GMT+0000',
                     soft: [500, 'ether'],
-                    hard: [10000, 'ether'],
+                    hard: [20000, 'ether'],
                     accepted: [1, 'ether']
                 },
                 publicsale: {
-                    start: 'March 14, 2018 12:00:00 GMT+0000',
+                    start: 'March 14, 2018 01:00:00 GMT+0000',
                     soft: [4000, 'ether'],
-                    hard: [12000, 'ether'],
+                    hard: [24000, 'ether'],
                     accepted: [40, 'finney']
                 },
                 phases: [{
-                    duration: [55, 'days'], // Presale - until March 10, 2018
+                    duration: [50, 'days'], // Presale - until March 10, 2018
                     rate: 1000,
                     lockupPeriod: [30, 'days'],
                     usesVolumeMultiplier: true
@@ -60,7 +60,7 @@ module.exports = {
                     usesVolumeMultiplier: false
                 }, {
                     duration: [10, 'days'], // Last week - until April 14, 2018
-                    rate: 1050, // 5%
+                    rate: 1000, // 0%
                     lockupPeriod: 0,
                     usesVolumeMultiplier: false
                 }],
@@ -92,30 +92,36 @@ module.exports = {
                 stakes: {
                     stakeholders: [{
                         account: 0, // Beneficiary 
-                        tokens: 0,
-                        eth: 9500,
+                        tokens: 1000,
+                        eth: 9400,
                         overwriteReleaseDate: false,
                         fixedReleaseDate: 0
                     }, {
                         account: 1, // Founders
-                        tokens: 1000,
+                        tokens: 600,
                         eth: 0,
-                        overwriteReleaseDate: false,
+                        overwriteReleaseDate: true,
                         fixedReleaseDate: 0
                     }, {
                         account: 2, // Marketing 1
                         tokens: 500,
-                        eth: 500,
-                        overwriteReleaseDate: false,
+                        eth: 300,
+                        overwriteReleaseDate: true,
                         fixedReleaseDate: 0
-                    },{
-                        account: 3, // Wings.ai community
+                    }, {
+                        account: 3, // Marketing 2
+                        tokens: 500,
+                        eth: 300,
+                        overwriteReleaseDate: true,
+                        fixedReleaseDate: 0
+                    }, {
+                        account: 4, // Wings.ai community
                         tokens: 200,
                         eth: 0,
                         overwriteReleaseDate: true,
                         fixedReleaseDate: 0
                     }, {
-                        account: 4, // Dcorp community
+                        account: 5, // Dcorp community
                         tokens: 200,
                         eth: 0,
                         overwriteReleaseDate: true,
@@ -154,19 +160,19 @@ module.exports = {
                     }
                 },
                 presale: {
-                    start: 'January 14, 2018 12:00:00 GMT+0000',
+                    start: 'January 19, 2018 01:00:00 GMT+0000',
                     soft: [500, 'ether'],
-                    hard: [10000, 'ether'],
+                    hard: [20000, 'ether'],
                     accepted: [1, 'ether']
                 },
                 publicsale: {
-                    start: 'March 14, 2018 12:00:00 GMT+0000',
+                    start: 'March 14, 2018 01:00:00 GMT+0000',
                     soft: [4000, 'ether'],
-                    hard: [12000, 'ether'],
+                    hard: [24000, 'ether'],
                     accepted: [40, 'finney']
                 },
                 phases: [{
-                    duration: [55, 'days'], // Presale - until March 10, 2018
+                    duration: [50, 'days'], // Presale - until March 10, 2018
                     rate: 1000,
                     lockupPeriod: [30, 'days'],
                     usesVolumeMultiplier: true
@@ -197,7 +203,7 @@ module.exports = {
                     usesVolumeMultiplier: false
                 }, {
                     duration: [10, 'days'], // Last week - until April 14, 2018
-                    rate: 1050, // 5%
+                    rate: 1000, // 0%
                     lockupPeriod: 0,
                     usesVolumeMultiplier: false
                 }],
@@ -228,22 +234,28 @@ module.exports = {
                 }],
                 stakes: {
                     stakeholders: [{
-                        account: 0, // Beneficiary 
-                        tokens: 0,
-                        eth: 9500,
+                        account: '0xb9E422C14Dc386ecABA087763042F7aaf979F2C9', // Beneficiary 
+                        tokens: 1000,
+                        eth: 9400,
                         overwriteReleaseDate: false,
                         fixedReleaseDate: 0
                     }, {
-                        account: 1, // Founders 
-                        tokens: 1000,
+                        account: '0xd0aa53768b851f48ed7b463c727232428cb6f04d', // Founders 
+                        tokens: 600,
                         eth: 0,
-                        overwriteReleaseDate: false,
+                        overwriteReleaseDate: true,
                         fixedReleaseDate: 0
                     }, {
                         account: '0xfc4Ac0FedF39179fC9725f5ee8CCFDd0E28b1aCF', // Marketing 1
                         tokens: 500,
-                        eth: 500,
-                        overwriteReleaseDate: false,
+                        eth: 300,
+                        overwriteReleaseDate: true,
+                        fixedReleaseDate: 0
+                    }, {
+                        account: '0xF83D6D63d25a63ef460cBA916e12315F1be1a786', // Marketing 2
+                        tokens: 500,
+                        eth: 300,
+                        overwriteReleaseDate: true,
                         fixedReleaseDate: 0
                     }, {
                         account: '0x72f38252217aD228da137aCf3a2CbF9adC61B24d', // Wings.ai community
