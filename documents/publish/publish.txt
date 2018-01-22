@@ -1,11 +1,39 @@
-
-
-
-geth --testnet --rpc --rpcport "8546" console
-web3.personal.unlockAccount("0xb1505aEaFe515A66c6975Bf4e62d9B5aa1cd26e4", "Sleutel80", 1500000)
-npm-run truffle migrate --network ropsten --reset
-
-
-geth --rpc --rpcport "8547"
-web3.personal.unlockAccount("0x3cAf983aCCccc2551195e0809B7824DA6FDe4EC8", "Sleutel80", 15000000)
-npm-run truffle migrate --network main
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0x346aa88f17db2369f8fee9938554117e902edcb2771032ddbf2da3a6dc8b1c03
+  Migrations: 0xf709c642c23842c4f8082581696f61fd80944ac5
+Saving artifacts...
+Running migration: 2_deploy_contracts.js
+  Running step...
+  Deploying Whitelist...
+  ... 0xd63f398ca7022e0a52f22164569a43da204003f5223088e6fa5ebaf3b5682f14
+  Whitelist: 0x531ac3341edfc39a04ed4c8b44ec396a46bc8690
+  Deploying SpendToken...
+  ... 0x5d176207ad42ea3ae54c7610220481288c16f8af4b4d5ed45d2c208bc8e65e2f
+  SpendToken: 0xfa9f699e5273864aace6ba20e1448e41c387aa00
+  Deploying SpendTokenBurner...
+  ... 0xd1347af0ee694139fbaf82a1c54af76a9142d343eb48e74e11eab1050714dc9a
+  SpendTokenBurner: 0xa256c2b420f0470163f9511b9301e02acf6415b3
+  Deploying MoxyOneCrowdsale...
+  ... 0x81cd5b126d0adae55b49f990e7e69d5e490753069da657989da780b1e76295c5
+  c: 0x6b609d9095d069c805650234ab67595b3a6ab934
+  Deploying CrowdsaleProxyFactory...
+  ... 0x410744b3a42caf2bdb264715f14c8550d285c6f1fdac5fbbdc68762df04a8dc0
+  CrowdsaleProxyFactory: 0xcf2f1d0ae77b7d6ec1e5961978dbfdcce6f007f7
+  Deploying CrowdsalePoolFactory...
+  ... 0x2a169125f47d544aaa13aa59850ac67a8093364147cf4966e22cc43731571a44
+  CrowdsalePoolFactory: 0x2303a4abbb0aceec468ccdf227dced461f2f2fd9
+  ... 0xb7773ce742adfb4439527ffec657998fbfd9707673412b1c0a6f60e3e03daf5b
+  ... 0x9ade2db2b816d7440e1dad4561dda6bd23b73c653915180180d9f1566e8abcfb
+  ... 0x08930796d97271ed1a8d21370c03ddaf93c6f42789b4a4a4a2851f5936f45152
+  ... 0xc1245a088cd26c1368c6bf46a81d482cf5ff5351be784beaa434019f64a16840
+  ... 0x0455b29a434ae9a5e05375938ebdcb204f02b3c7549f09f82c2cc04fce3d208a
+  ... 0xccb95d432a9f41c6e59ca3bac4433046615e205632e9ad631067a61dd5ac874c
+  ... 0xe6eecb33e5de790d45bdffac1fe195cd4aca991a93171dff3d0f77d22a45de09
+  ... 0x3da9359336816e811db808e1edc5170d5f4d45b77b1d2cb3c38a402790437e0b
+  ... 0x947505a1bab024275a42c5afc3c03f9ce7cd69f12131903a56a01ef0a761f8be
+  ... 0x123fb446b074a8346c76d99c4aa603e9dd6be7d0852890ff8cfdfc5ee5165275
+  ... 0x2d1314ff2b3a8585400371498f4173df2aa5a09fdee2f91099c290eec197e837
+  ... 0x356d54eea8a211d11d766e54687833a2226c846d6082532a5b33688a6694bb60
+  ... 0xcedd9365267cd51cb7a44d196d565ba190728f38ebab3b2ab834a233dca38053
+Saving artifacts...
